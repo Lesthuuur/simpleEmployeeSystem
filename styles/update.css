@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+}
+
+main {
+    height: 85%;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.top {
+    height: 10%;
+    width: inherit;
+    padding: 1rem 2rem;
+}
+
+.content{
+    background-color: #181938;
+    width: 60%;
+    height: 80%;
+    margin: auto;
+    border-radius: 30px;
+    padding: 2rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    overflow: auto;
+}
+
+form{
+    margin-top: 1rem;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+
+.text-input{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.text-input input{
+    height: 2.5rem;
+    padding: 1rem;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.submit-btn{
+    height: 3rem;
+    width: 30%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+label{
+    font-size: 16px;
+}
+
+
+
+.row1, .row2, .row3{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    gap: 1rem;
+}
+
+.update-info-div{
+    width: 50%;
+}

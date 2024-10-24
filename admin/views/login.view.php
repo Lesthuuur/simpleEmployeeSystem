@@ -19,9 +19,16 @@
                 <h1>LOGIN</h1>
                 <div class="line-division"></div>
 
-                <input type="text" class="form-input username" id="username" name="username" placeholder="USERNAME">
-                <input type="text" class="form-input password" id="password" name="password" placeholder="PASSWORD">
-
+                <div class="username">
+                    <input type="text" class="form-input username" id="username" name="username" placeholder="USERNAME">
+                    <small style="color: red;"><?php echo checkAndDisplayError($usernameError)?></small>
+                </div>
+              
+                <div class="password">
+                    <input type="text" class="form-input password" id="password" name="password" placeholder="PASSWORD">
+                    <small style="color: red;"><?php echo checkAndDisplayError($passwordError)?></small>
+                </div>
+                
                 <input type="submit" class="submit-btn" id="submit" name="submit" value="LOGIN">
 
             </form>

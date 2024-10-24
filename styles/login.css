@@ -55,7 +55,12 @@ form h1{
     text-align: center;
 }
 
-
+.username, .password{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+}
 
 input{
     height: 3.5rem;

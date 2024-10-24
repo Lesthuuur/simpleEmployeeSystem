@@ -1,0 +1,30 @@
+
+
+header{
+    background-color: #181938;
+    color: white;
+    height: 15%;
+    width: 100%;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+header .buttons{
+  
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+
+header .buttons a{
+    text-decoration: none;
+    color: black;
+    padding: 1rem 2rem;
+    background-color: white;
+    border-radius: 20px;
+}
