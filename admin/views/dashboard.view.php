@@ -31,14 +31,20 @@
                             <p>Department: <span><?= $employee["department"] ?></span> </p>
                             <p>Email: <span><?= $employee["email"] ?></span> </p>
                             <p>Phone: <span><?= $employee["phone"] ?></span> </p>
-                            <p>Username: <span><?= $employee["username"] ?></span> </p>
+                
                       
                         </div>
 
                         <div class="card-button">
                             <button class="update" id="<?php echo $employee['id']; ?>" onclick="updateRedirection('/admin/controller/update.php', <?php echo $employee['id']; ?>);">Update</button>
 
-                            <button class="delete" id="<?php echo $employee['id'] ?>"  >Delete</button>
+                            <form action="/admin/controller/delete.php" method="POST" style="display:inline;">
+                            <input type="hidden" name="id" value="<?php echo $employee['id']; ?>">
+                            <button type="button" class="delete" id="deleteBtn-<?php echo $employee['id']; ?>">Delete</button>
+                            </form>
+
+                            
+             
                         </div>
                         </div>
 

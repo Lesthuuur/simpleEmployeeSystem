@@ -2,6 +2,8 @@
 require "../../includes/connection.php";
 require "../../includes/functions.php";
 
+
+
 if (isset($_GET['id'])) {
     $id = $_GET["id"];
 
@@ -21,8 +23,7 @@ if (isset($_GET['id'])) {
     $department = $employee['department'];
     $email = $employee['email'];
     $phone = $employee['phone'];
-    $username = $employee['username'];
-    $password = $employee['password'];
+
 
     if (isset($_POST['update-profile'])) {
 
@@ -31,7 +32,6 @@ if (isset($_GET['id'])) {
         $input_department = $_POST['department'];
         $input_email = $_POST['email'];
         $input_phone = $_POST['phone'];
-        $input_username = $_POST['username'];
 
         $input_array = [
             $input_firstname,
@@ -39,7 +39,6 @@ if (isset($_GET['id'])) {
             $input_department,
             $input_email,
             $input_phone,
-            $input_username
         ];
 
         $isInputEmpty = false;
@@ -76,7 +75,7 @@ if (isset($_GET['id'])) {
                 ";
             } else {
                 // If all inputs are valid, proceed with updating the data
-                $update = "UPDATE employees SET first_name = :firstname, surname = :surname, department = :department, email = :email, phone = :phone, username = :username WHERE id = :id";
+                $update = "UPDATE employees SET first_name = :firstname, surname = :surname, department = :department, email = :email, phone = :phone WHERE id = :id";
                 $updateStmt = $conn->prepare($update);
 
                 $updateStmt->execute([
@@ -85,7 +84,7 @@ if (isset($_GET['id'])) {
                     ':department' => $input_department,
                     ':email' => $input_email,
                     ':phone' => $input_phone,
-                    ':username' => $input_username,
+           
                     ':id' => $id
                 ]);
 
@@ -99,8 +98,6 @@ if (isset($_GET['id'])) {
         }
     }
 
-    if (isset($_POST['change-password'])) {
-    }
 } else {
 
     header("location: dashboard.php");
