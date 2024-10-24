@@ -10,12 +10,13 @@ body {
     background-color: white;
     display: grid;
     place-items: center;
+    font-family: "Poppins";
 }
 
 main {
     background-color: #181938;
     height: 80%;
-    width: 90%;
+    width: 70%;
     border-radius: 20px;
     display: flex;
 }
@@ -33,14 +34,13 @@ main {
     color: white;
 }
 
-
-.right{
+.right {
     width: 50%;
     display: grid;
     place-items: center;
 }
 
-form{
+form {
     background-color: white;
     width: 70%;
     height: auto;
@@ -51,26 +51,28 @@ form{
     gap: 2rem;
 }
 
-form h1{
+form h1 {
     text-align: center;
 }
 
-.username, .password{
+.username,
+.password {
     display: flex;
     flex-direction: column;
     width: 100%;
     gap: 5px;
 }
 
-input{
+input {
     height: 3.5rem;
     width: 100%;
     padding-left: 1rem;
     border-radius: 10px;
     font-size: 16px;
+    border: 1px black solid;
 }
 
-.submit-btn{
+.submit-btn {
     background-color: #181938;
     color: white;
     border: none;

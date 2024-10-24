@@ -5,7 +5,11 @@
 
     <div class="buttons">
         <a href="">Add Employee</a>
-        <a href="">LOGOUT</a>
+        <a href="/admin/controller/logout.php">LOGOUT</a>
     </div>
 
-</header> 
+</header>
+
+<script>
+
+</script>
