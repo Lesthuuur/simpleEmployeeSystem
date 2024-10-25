@@ -1,6 +1,8 @@
 <?php
+session_start();
 require "../../includes/connection.php";
 require "../../includes/functions.php";
+isLoggedIn($_SESSION);
 $passwordErrors = [];
 $passwordSuccess = "";
 $profileErrors = [];

@@ -1,4 +1,5 @@
 <?php
+session_start();
 require "../../includes/connection.php";
 require "../../includes/functions.php";
 $errors = [];

@@ -12,3 +12,14 @@ function generateEmployeeNumber() {
 
     return "EMP" . $randomNumber;
 }
+
+function isLoggedIn($session) {
+   
+    if (isset($session['current_user_id'])) {
+        return true;
+    } else {
+      
+        header("Location: login.php");
+        exit();
+    }
+}

@@ -95,6 +95,12 @@ form {
     font-size: 1.1em;
 }
 
+.submit-btn:hover {
+    text-decoration: none;
+    background-color: #7477be;
+    font-weight: 500;
+}
+
 label {
     font-size: 16px;
     padding-left: 5px;
@@ -125,6 +131,6 @@ label {
     width: 80%;
 }
 
-.errors{
+.errors {
     color: red;
 }

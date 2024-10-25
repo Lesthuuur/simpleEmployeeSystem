@@ -37,7 +37,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 $_SESSION["current_user_username"] = $user['username'];    
                 
                 header("location: dashboard.php");
-    
+                exit();
             }
         }
 

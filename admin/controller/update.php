@@ -1,7 +1,8 @@
 <?php
+session_start();
 require "../../includes/connection.php";
 require "../../includes/functions.php";
-
+isLoggedIn($_SESSION);
 $errors = [];
 $success = "";
 

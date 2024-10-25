@@ -1,7 +1,9 @@
 <?php
 session_start();
+
 require "../../includes/connection.php";
 require "../../includes/functions.php";
+isLoggedIn($_SESSION);
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_POST['id'])) {
         $user = $_POST['id'];

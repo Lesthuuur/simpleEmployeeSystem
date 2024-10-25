@@ -1,9 +1,9 @@
 <?php
-
+session_start();
 require "../../includes/connection.php";
 require "../../includes/functions.php";
 
-
+isLoggedIn($_SESSION);
 
 
 $getUser = "SELECT * FROM admin";
