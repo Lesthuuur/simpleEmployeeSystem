@@ -25,12 +25,18 @@ include "../views/dashboard.view.php";
 
     const deleteBtn = document.getElementsByClassName("delete");
 
-    document.getElementById("deleteBtn-<?php echo $employee['id']; ?>").addEventListener("click", function() {
-    // Show confirmation dialog
-    if (confirm("Are you sure you want to delete this employee?")) {
-        // If confirmed, submit the form
-        document.getElementById("deleteForm-<?php echo $employee['id']; ?>").submit();
-    }
+    const deleteButtons = document.querySelectorAll('[id^="deleteBtn-"]');
+
+    deleteButtons.forEach(button => {
+        button.addEventListener("click", function() {
+            const employeeId = this.id.split("-")[1]; // Extract ID from button ID
+
+            if (confirm("Are you sure you want to delete this employee?")) {
+                // Submit the corresponding form
+                document.getElementById(`deleteForm-${employeeId}`).submit();
+            }
+        });
+    
 });
 
 </script>

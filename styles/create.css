@@ -19,11 +19,6 @@ main {
     flex-direction: column;
 }
 
-.errors{
-    color: red;
-}
-
-
 .top {
     height: 10%;
     width: inherit;
@@ -37,7 +32,7 @@ main {
     margin: auto;
     border-radius: 30px;
     padding: 1rem;
-    color: white;   
+    color: white;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -46,32 +41,29 @@ main {
     overflow: auto;
 }
 
-.back{
+.back {
     width: 90%;
 
     margin: auto;
     padding-top: 1rem;
-    display:flex;
+    display: flex;
     justify-content: start;
- }
- 
- .back a{
-     display:flex;
-     justify-content: start;
-     text-decoration: none;
-     color: white;
-     font-size: 1.2em;
-     height: auto;
- 
- }
- 
+}
+
+.back a {
+    display: flex;
+    justify-content: start;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    height: auto;
+}
 
 .content::-webkit-scrollbar {
     display: none;
 }
 
 form {
-
     width: 100%;
     height: 95%;
     padding: 1rem;
@@ -108,7 +100,8 @@ label {
     padding-left: 5px;
 }
 
-.change-password-text, .update-profile-text{
+.change-password-text,
+.update-profile-text {
     font-size: 2em;
 }
 
@@ -124,9 +117,14 @@ label {
 
 .update-info-div {
     width: 80%;
-
 }
 
-.old-pass, .new-pass, .confirm-pass{
+.old-pass,
+.new-pass,
+.confirm-pass {
     width: 80%;
+}
+
+.errors{
+    color: red;
 }

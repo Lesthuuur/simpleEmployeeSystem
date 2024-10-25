@@ -6,3 +6,9 @@ function checkAndDisplayError($error){
     }
 }
 
+function generateEmployeeNumber() {
+
+    $randomNumber = rand(100, 999);
+
+    return "EMP" . $randomNumber;
+}

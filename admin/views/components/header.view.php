@@ -4,7 +4,8 @@
     </h2>
 
     <div class="buttons">
-        <a href="">Add Employee</a>
+        <a href="/admin/controller/admin.php">USERS</a>
+        <a href="/admin/controller/dashboard.php">EMPLOYEES</a>
         <a href="/admin/controller/logout.php">LOGOUT</a>
     </div>
 

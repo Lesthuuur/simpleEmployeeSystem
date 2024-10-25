@@ -19,10 +19,10 @@ main {
     flex-direction: column;
 }
 
+
 .errors{
     color: red;
 }
-
 
 .top {
     height: 10%;

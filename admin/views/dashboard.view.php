@@ -14,6 +14,7 @@
     <main>
         <div class="top">
             <h1>LIST OF EMPLOYEES</h1>
+            <a href="/admin/controller/create.php">Create</a>
         </div>
 
         <div class="content">
@@ -38,9 +39,9 @@
                         <div class="card-button">
                             <button class="update" id="<?php echo $employee['id']; ?>" onclick="updateRedirection('/admin/controller/update.php', <?php echo $employee['id']; ?>);">Update</button>
 
-                            <form action="/admin/controller/delete.php" method="POST" style="display:inline;">
-                            <input type="hidden" name="id" value="<?php echo $employee['id']; ?>">
-                            <button type="button" class="delete" id="deleteBtn-<?php echo $employee['id']; ?>">Delete</button>
+                            <form id="deleteForm-<?php echo $employee['id']; ?>" action="/admin/controller/delete.php" method="POST" style="display:inline;">
+                                <input type="hidden" name="id" value="<?php echo $employee['id']; ?>">
+                                <button type="button" class="delete" id="deleteBtn-<?php echo $employee['id']; ?>">Delete</button>
                             </form>
 
                             
