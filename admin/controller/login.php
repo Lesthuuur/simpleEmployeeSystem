@@ -25,12 +25,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $getUserStmt->execute([":username" => $username]);
     
         $user = $getUserStmt->fetch();
-
+        $hashPass = hash("sha256", $password);
         if(!$user){
             $usernameError = "Username not found!";
         }else{
 
-            if($user['password'] !== $password){
+            if($user['password'] !== $hashPass){
                 $passwordError = "Password does not match!";
             }else{
                 $_SESSION["current_user_id"] = $user['id'];    
