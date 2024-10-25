@@ -56,15 +56,15 @@
                 
                     <div class="text-input update-info-div password">
                         <label for="password">Password</label>
-                        <input type="text" name="password" >
+                        <input type="password" name="password" >
                     </div>
                     <div class="text-input update-info-div password">
                         <label for="newpass">New Password</label>
-                        <input type="text" name="newPass" >
+                        <input type="password" name="newPass" >
                     </div>
                     <div class="text-input update-info-div password">
                         <label for="newpass">Confirm Password</label>
-                        <input type="text" name="confirm_password" >
+                        <input type="password" name="confirm_password" >
                     </div>
 
 

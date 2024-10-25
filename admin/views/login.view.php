@@ -26,7 +26,7 @@
                 </div>
               
                 <div class="password">
-                    <input type="text" class="form-input password" id="password" name="password" placeholder="PASSWORD">
+                    <input type="password" class="form-input password" id="password" name="password" placeholder="PASSWORD">
                     <small style="color: red;"><?php echo checkAndDisplayError($passwordError)?></small>
                 </div>
                 
